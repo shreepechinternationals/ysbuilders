@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FD5D14;
-    --secondary: #FDBE33;
+    --primary: #47946F;
+    --secondary: #F8C633;
     --light: #F4F6F8;
-    --dark: #040F28;
+    --dark: #000;
 }
 
 .pt-6 {
@@ -33,7 +33,7 @@
     height: 5px;
     bottom: -1px;
     left: 50%;
-    background: var(--primary);
+    background: var(--secondary);
     transition: .5s;
 }
 
@@ -101,13 +101,16 @@
     background-image: repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
     background-size: 3px 3px;
 }
+.bg-yellow{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(198,224,113,1) 35%, rgba(245,222,22,1) 100%);
+}
 
 .navbar-dark .navbar-nav .nav-link {
     position: relative;
     padding: 35px 15px;
     font-size: 18px;
     text-transform: uppercase;
-    color: var(--light);
+    color: var(--dark);
     outline: none;
     transition: .5s;
 }
