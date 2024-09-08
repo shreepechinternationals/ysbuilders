@@ -105,6 +105,11 @@
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(198,224,113,1) 35%, rgba(245,222,22,1) 100%);
 }
 
+.bg-footer{
+    background: rgb(226,224,205);
+    background: linear-gradient(90deg, rgba(226,224,205,1) 0%, rgba(2,133,10,1) 44%);   
+}
+
 .navbar-dark .navbar-nav .nav-link {
     position: relative;
     padding: 35px 15px;
