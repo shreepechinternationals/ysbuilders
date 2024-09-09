@@ -125,14 +125,15 @@
             <div class="col-lg-6">
                 <div class="bg-light text-center p-5">
 
-                  <form>
+                  <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="ac0fc024-542b-49d8-8815-891454511d69">
                     <div class="row g-3">
                       <div class="col-12 col-sm-6">
                         <input
                           type="text"
                           class="form-control border-0"
                           placeholder="Your Name"
-                          style="height: 55px"
+                          style="height: 55px" required
                         />
                       </div>
                       <div class="col-12 col-sm-6">
@@ -140,7 +141,7 @@
                           type="email"
                           class="form-control border-0"
                           placeholder="Your Email"
-                          style="height: 55px"
+                          style="height: 55px" required
                         />
                       </div>
                       <div class="col-12 col-sm-6">
@@ -148,7 +149,7 @@
                             type="subject"
                             class="form-control border-0"
                             placeholder="Submit"
-                            style="height: 55px"
+                            style="height: 55px" required
                           />
                         </div>
                       <div class="col-12 col-sm-6">
@@ -156,7 +157,7 @@
                             type="phone"
                             class="form-control border-0"
                             placeholder="Your Phone Number"
-                            style="height: 55px"
+                            style="height: 55px" required
                           />
                         </div>
                         
@@ -165,9 +166,12 @@
                         <textarea
                           class="form-control border-0"
                           rows="5"
-                          placeholder="Message"
+                          placeholder="Message" required
                         ></textarea>
                       </div>
+                      <input type="hidden" name="redirect" value="https://www.ysbuilders.com.np/thanks.html">
+                      <div class="h-captcha" data-captcha="true"></div>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                       <div class="col-12">
                         <button class="btn btn-primary w-100 py-3" type="submit">
                           Submit Form
@@ -284,6 +288,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>
