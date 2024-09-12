@@ -483,7 +483,7 @@
     </div>
     <!-- Award End -->
      <!-- Appointment Start -->
-     <div class="container-fluid py-6 px-5">
+     <div class="container-fluid bg-yellow py-6 px-5">
       <div class="row gx-5">
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="mb-4">
@@ -498,54 +498,83 @@
             immediately, and let us collaborate to produce something
             exceptional.
           </p>
-          <br/>
-          <a class="btn btn-primary py-3 px-5" href="contact.html">Contact Us</a>
+          <br />
+          <a class="btn btn-primary py-3 px-5" href="contact.html"
+            >Contact Us</a
+          >
         </div>
         <div class="col-lg-8">
           <div class="bg-light text-center p-5">
-            <form>
+            <form action="https://api.web3forms.com/submit"
+            method="POST">
               <div class="row g-3">
                 <div class="col-12 col-sm-6">
                   <input
+                      type="hidden"
+                      name="access_key"
+                      value="ac0fc024-542b-49d8-8815-891454511d69"
+                    />
+                  <input
                     type="text"
+                    id="name"
                     class="form-control border-0"
                     placeholder="Your Name"
+                    name="Name"
                     style="height: 55px"
                   />
                 </div>
                 <div class="col-12 col-sm-6">
                   <input
                     type="email"
+                    id="email"
                     class="form-control border-0"
                     placeholder="Your Email"
                     style="height: 55px"
+                    name="Email Address"
                   />
                 </div>
                 <div class="col-12 col-sm-6">
-                    <input
-                      type="subject"
-                      class="form-control border-0"
-                      placeholder="Submit"
-                      style="height: 55px"
-                    />
-                  </div>
+                  <input
+                    type="text"
+                    id="subject"
+                    class="form-control border-0"
+                    placeholder="Subject"
+                    style="height: 55px"
+                    name="Subject"
+                  />
+                </div>
                 <div class="col-12 col-sm-6">
-                    <input
-                      type="phone"
-                      class="form-control border-0"
-                      placeholder="Your Phone Number"
-                      style="height: 55px"
-                    />
-                  </div>
-                  
-                
+                  <input
+                    type="number"
+                    id="contact-number"
+                    class="form-control border-0"
+                    placeholder="Your Phone Number"
+                    style="height: 55px"
+                    name="Phone Number"
+                  />
+                </div>
+
                 <div class="col-12">
                   <textarea
                     class="form-control border-0"
                     rows="5"
+                    id="message"
                     placeholder="Message"
+                    name="Message"
                   ></textarea>
                 </div>
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="https://www.ysbuilders.com.np/thanks.html"
+                />
+                <div class="h-captcha" data-captcha="true"></div>
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  class="hidden"
+                  style="display: none"
+                />
                 <div class="col-12">
                   <button class="btn btn-primary w-100 py-3" type="submit">
                     Submit Form

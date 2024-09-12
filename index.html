@@ -206,7 +206,7 @@
     <!-- Carousel End -->
 
     <!-- About Start -->
-    <div class="container-fluid py-6 px-5">
+    <div class="container-fluid py-6 px-5 bg-yellow" >
       <div class="row g-5">
         <div class="col-lg-7">
           <h1 class="display-5 text-uppercase mb-4">
@@ -371,7 +371,7 @@
     <!-- Services End -->
 
     <!-- Team Start -->
-    <div class="container-fluid py-4 px-5">
+    <div class="container-fluid py-4 px-5 bg-yellow">
       <div class="text-center mx-auto mb-4">
         <div class="row gx-5">
           <div class="col-12 text-center">
@@ -550,8 +550,9 @@
     </div>
     <!-- Portfolio End -->
 
+
     <!-- Appointment Start -->
-    <div class="container-fluid py-6 px-5">
+    <div class="container-fluid bg-yellow py-6 px-5">
       <div class="row gx-5">
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="mb-4">
@@ -573,38 +574,52 @@
         </div>
         <div class="col-lg-8">
           <div class="bg-light text-center p-5">
-            <form>
+            <form action="https://api.web3forms.com/submit"
+            method="POST">
               <div class="row g-3">
                 <div class="col-12 col-sm-6">
                   <input
+                      type="hidden"
+                      name="access_key"
+                      value="ac0fc024-542b-49d8-8815-891454511d69"
+                    />
+                  <input
                     type="text"
+                    id="name"
                     class="form-control border-0"
                     placeholder="Your Name"
+                    name="Name"
                     style="height: 55px"
                   />
                 </div>
                 <div class="col-12 col-sm-6">
                   <input
                     type="email"
+                    id="email"
                     class="form-control border-0"
                     placeholder="Your Email"
                     style="height: 55px"
+                    name="Email Address"
                   />
                 </div>
                 <div class="col-12 col-sm-6">
                   <input
-                    type="subject"
+                    type="text"
+                    id="subject"
                     class="form-control border-0"
-                    placeholder="Submit"
+                    placeholder="Subject"
                     style="height: 55px"
+                    name="Subject"
                   />
                 </div>
                 <div class="col-12 col-sm-6">
                   <input
-                    type="phone"
+                    type="number"
+                    id="contact-number"
                     class="form-control border-0"
                     placeholder="Your Phone Number"
                     style="height: 55px"
+                    name="Phone Number"
                   />
                 </div>
 
@@ -612,9 +627,23 @@
                   <textarea
                     class="form-control border-0"
                     rows="5"
+                    id="message"
                     placeholder="Message"
+                    name="Message"
                   ></textarea>
                 </div>
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="https://www.ysbuilders.com.np/thanks.html"
+                />
+                <div class="h-captcha" data-captcha="true"></div>
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  class="hidden"
+                  style="display: none"
+                />
                 <div class="col-12">
                   <button class="btn btn-primary w-100 py-3" type="submit">
                     Submit Form
@@ -714,7 +743,7 @@
     <!-- Testimonial End -->
 
     <!-- Blog Start -->
-    <div class="container-fluid py-6 px-5">
+    <div class="container-fluid py-6 px-5 bg-yellow">
       <div class="text-center mx-auto mb-5" style="max-width: 600px">
         <h1 class="display-5 text-uppercase mb-4">
           Latest <span class="text-primary">Articles</span> From <span class="text-primary">Our Blog</span> Post
@@ -966,5 +995,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
