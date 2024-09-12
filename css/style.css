@@ -181,6 +181,28 @@
     font-size: 60px;
 }
 
+.service-radius{
+    border-radius: 30%;
+    border: 2px solid transparent;
+    box-shadow: 10px 10px 10px #47946F;
+}
+
+.service-radius:hover{
+    background-color: #47946F;
+    border: 2px solid transparent;
+    box-shadow: 10px 10px 10px #000;
+}
+
+.service-img{
+    border-radius: 100px;
+}
+
+.service-img:hover{
+    border-radius: 100px;
+    /* transform: scale(1.1); */
+}
+
+
 .portfolio-item {
     margin-bottom: 60px;
 }
