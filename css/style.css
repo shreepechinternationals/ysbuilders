@@ -199,8 +199,21 @@
 
 .service-img:hover{
     border-radius: 100px;
-    /* transform: scale(1.1); */
 }
+
+.about-img {
+    border-radius: 20%;
+    border: 2px solid transparent;
+    box-shadow: 10px 10px 10px #47946F;
+}
+
+.about-img:hover {
+    border-radius: 20%;
+    transform: scale(1.1);
+    border: 2px solid transparent;
+    box-shadow: 10px 10px 10px #000;
+}
+
 
 
 .portfolio-item {
