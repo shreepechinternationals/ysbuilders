@@ -182,9 +182,9 @@
 }
 
 .service-radius{
-    border-radius: 30%;
+    border-radius: 5%;
     border: 2px solid transparent;
-    box-shadow: 10px 10px 10px #47946F;
+    
 }
 
 .service-radius:hover{
@@ -194,17 +194,17 @@
 }
 
 .service-img{
-    border-radius: 100px;
+    border-radius: 10px;
 }
 
 .service-img:hover{
-    border-radius: 100px;
+    border-radius: 18px;
 }
 
 .about-img {
     border-radius: 20%;
     border: 2px solid transparent;
-    box-shadow: 10px 10px 10px #47946F;
+    
 }
 
 .about-img:hover {
