@@ -204,7 +204,7 @@
 .about-img {
     border-radius: 20%;
     border: 2px solid transparent;
-    
+ 
 }
 
 .about-img:hover {
@@ -214,6 +214,13 @@
     box-shadow: 10px 10px 10px #000;
 }
 
+.portfolio-img {
+    border-radius: 10%;
+ 
+}
+.portfolio-img:hover {
+    border-radius: 10%;
+}
 
 
 .portfolio-item {
