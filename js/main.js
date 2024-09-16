@@ -30,7 +30,7 @@
     
     // Back to top button
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 300) {
             $('.back-to-top').fadeIn('slow');
         } else {
             $('.back-to-top').fadeOut('slow');
@@ -40,6 +40,7 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
+
 
 
     // Portfolio isotope and filter
@@ -63,6 +64,9 @@
         dots: false,
         loop: true,
     });
+
+    // Initiate the wowjs
+    new WOW().init();
     
 })(jQuery);
 
