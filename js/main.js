@@ -65,6 +65,8 @@
         loop: true,
     });
 
+    
+
     // Initiate the wowjs
     new WOW().init();
     
