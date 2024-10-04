@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row gx-5">
   <div class="col-md-2">
     <select
       class="form-control input-small"
@@ -7,7 +7,7 @@
       ng-change="changeConvertTo()"
     ></select>
   </div>
-  <div class="col-md-2">
+  <div class="col-md-3">
     <select
       class="form-control input-small"
       data-ng-model="year"
@@ -15,7 +15,7 @@
       ng-change="hideResult()"
     ></select>
   </div>
-  <div class="col-md-2">
+  <div class="col-md-3">
     <select
       class="form-control input-small"
       data-ng-model="month"
@@ -31,12 +31,12 @@
       ng-change="hideResult()"
     ></select>
   </div>
-  <div class="col-lg-4"> 
+  <div class="col-md-2"> 
     <a class="btn btn-primary" data-ng-click="convertDate()">{{btnText}}</a>
   </div>
 </div>
-<div ng-switch on="result">
-  <div ng-switch-when="true" class="date-result text-uppercase text-center py-4">
+<div ng-switch on="result" class="py-1 px-2">
+  <div ng-switch-when="true" class="date-result text-uppercase text-center py-6 px-2">
     <h3 class="week-name">{{resultWeekDay}}
     <span class="converted-date text-primary"
       >, {{resultMonth}} {{resultDay}}, {{resultYear}}</span
