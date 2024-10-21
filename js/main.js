@@ -1,6 +1,7 @@
 (function ($) {
     "use strict";
     
+    
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -41,7 +42,7 @@
         return false;
     });
 
-
+    
 
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
